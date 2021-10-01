@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="keywords" content="Topografia, GIS, Geomatica, SIG, Cartografia digital" />
+	<title>Contacto </title>
+	<link rel="stylesheet" href="geosis.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Open+sans|Oswald|Prompt|Arimo:400,700,400italic,700italic" />
+	<script src="geosis.js"></script>
+	<script src="jquery-3.1.0.min.js" type="text/javascript"> </script>
+	
+</head>
+
+
+<body id="cuerpo">
+
+<div id="main">
+
+	<nav id="menu_navegación">
+		<ul>
+			<li id="inicio"><a href="Home.html">INICIO </a></li>
+			<li id="quienes_somos"><a href="Quienes_somos.html">QUIENES SOMOS </a></li>
+			<li id="servicios"><a href="Servicios.html">SERVICIOS </a></li>
+			<li id="proyectos"><a href="Proyectos.html">PROYECTOS </a></li>
+			<li id="contacto"><a href="Contacto.html">CONTACTO </a></li> 
+		</ul>
+	</nav>
+	<!-- Formulario de contacto-->
+	<h2>Formulario de contacto</h2>
+	<form class="formulario">
+		<fieldset>
+			<legend>Datos personales</legend>
+			<label for="nombre">Nombre:</label>
+			<input type="text" name="nombre" id="nombre" placeholder="Tu nombre" autocomplete="on">
+			<br>
+			<label for="apellido">Apellido:</label>
+			<input type="text" name="apellido" id="apellido" placeholder="Tu apellido" autocomplete="on">
+			<br>
+			<label for="sexo">Sexo:</label>
+			<input type="radio" id="sexo" name="sexo" value="hombre"> Hombre
+			<input type="radio" id="sexo" name="sexo" value="mujer"> Mujer 
+			<br>
+			<br>
+			<label for="telefono">Telefono:</label>
+			<input type="text" name="telefono" id="telefono" placeholder="Tu telefono" autocomplete="on">
+		</fieldset>
+		
+		<fieldset>
+			<legend>Información</legend>
+				<label for="turno">Turno</label>
+				<select id="turno" class="turno" name="turno">Turno
+					<option value="matutino">Matutino</option>
+					<option value="despertino">Despertino</option>
+					<option value="nocturno" selected>Nocturno</option>
+					
+				</select>
+		</fieldset>
+			<br>
+			<br>
+			<input type="submit" value="Enviar">
+	</form>
+	
+</body>

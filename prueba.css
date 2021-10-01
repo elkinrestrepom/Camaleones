@@ -1,0 +1,21 @@
+/*
+ 
+CSS TRANSITIONS
+*/
+ 
+.nav a
+{
+-o-transition: all 500ms;
+-moz-transition: all 500ms;
+-webkit-transition: all 500ms;
+transition: all 500ms;
+}
+ 
+p a
+{
+-o-transition: border-bottom 250ms;
+-moz-transition: border-bottom 250ms;
+-webkit-transition: border-bottom 250ms;
+transition: border-bottom 250ms;
+}
+

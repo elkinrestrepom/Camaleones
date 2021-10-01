@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="description" content="Empresa topografia y geomatica">
+	<meta name="keywords" content="Topografia, GIS, Geomatica, SIG, Cartografia digital" />
+	<title>GEOSIS SAS</title>
+	<link rel="stylesheet" href="geosis.css" />
+	<script src="Geosis.js"></script>
+	<script src="jquery-3.1.0.min.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+sans|Oswald|Prompt|Arimo:400,700,400italic,700italic" rel="stylesheet"/>
+	
+</head>
+
+
+<body id="cuerpo">
+	
+<div id="main">
+	<header id="cabecera" role="banner">
+		<img id="logo_transparente" src="imagenes/logo_Transparente.png" width="358" height="134" alt="logo_geosis"/>
+		<P>+57 3205922237<br>
+		Carrera 85A 33-25<br>
+		Cali-Colombia</p>   
+	</header>
+
+	<nav id="menu_navegación" role="navigation">
+		<ul>
+			<li id="inicio"><a href="Home.html">INICIO</a></li>
+			<li id="quienes_somos"><a href="Quienes_somos.html">QUIENES SOMOS</a></li>
+			<li id="servicios"><a href="Servicios.html">SERVICIOS</a></li>
+			<li id="proyectos"><a href="Proyectos.html">PROYECTOS</a></li>
+			<li id="contacto"><a href="Contacto.html">CONTACTO</a></li> 
+		</ul>
+	</nav>
+	
+	<main class="cuerpo" role="main">
+	<section>
+		<div id="imagen_principal">
+		
+		</div>
+		<div id="titulo1">
+		<h2>SOLUCIONES INTEGRALES EN GEOMATICA SAS</h2>
+		</div>
+		
+		<div id ="cuadro1">
+			<h2>QUIENES SOMOS?</h2>
+			<article id="cuadro1A"></article>
+			<br>
+			
+		</div>
+		
+		<div id="cuadro2">
+			<h2>SERVICIOS</h2>
+			<article id="cuadro2A"></article>
+			<br>
+		</div>
+		
+		<div id="cuadro3">
+			<h2>PROYECTOS</h2>
+			<article id="cuadro3A"></article>
+			<br>
+		</div>
+	</section>
+	</main>
+	
+	<aside id="noticias" role="complementary">
+		<h2>Noticias</h2>
+		<blockquote>Mensaje numero uno</blockquote>
+		<blockquote>Mensaje numero gos</blockquote>
+		<!-- Resto de noticias-->
+		<a href="http://google.com.co" target="_blank">Google</a>
+	</aside>
+	
+	<div id="map"></div>
+	
+	<footer id="pie_pagina" role="contentinfo">
+		<header>
+			<p>Cali - Colombia</p>
+			<p>Cra. 85A No. 33-25</p>
+			<p>Cel 3205922237</p>
+			<p>Contáctenos en: <a href="mailto:geosiscontacto@gmail.com">geosiscontacto@gmail.com</a></p>
+		</header>
+		<footer id="derechos">
+		<p><small>Soluciones Integrales en Geomatica - Geosis S.A.S 2016 &copy; Todos los derechos reservados</small></p>
+		</footer>
+	</footer>
+</div>
+
+<div id="map" style="width:100%;height:500px"></div>
+
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.2), 
+    zoom: 10
+  }
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+</body>
+
+</html>
